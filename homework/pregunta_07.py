@@ -5,10 +5,9 @@ solo puede utilizar las funciones y librerias basicas de python. No puede
 utilizar pandas, numpy o scipy.
 """
 
-
 def pregunta_07():
     """
-    Retorne una lista de tuplas que asocien las columnas 0 y 1. Cada tupla
+    Retorne una lista de tuplas que asocien las columnas 2 y 1. Cada tupla
     contiene un valor posible de la columna 2 y una lista con todas las letras
     asociadas (columna 1) a dicho valor de la columna 2.
 
@@ -23,5 +22,35 @@ def pregunta_07():
      (7, ['A', 'C', 'E', 'D']),
      (8, ['E', 'D', 'E', 'A', 'B']),
      (9, ['A', 'B', 'E', 'A', 'A', 'C'])]
-
     """
+    # Ruta al archivo CSV
+    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
+
+    # Diccionario para mapear valores de columna 2 a letras de columna 1
+    asociaciones = {}
+
+    # Abrimos el archivo
+    with open(ruta_archivo, "r", encoding="utf-8") as file:
+        for linea in file:
+            # Separar cada línea por tabuladores
+            partes = linea.strip().split("\t")
+
+            letra = partes[0]            # Columna 1: letra
+            valor = int(partes[1])       # Columna 2: valor numérico
+
+            # Asociamos valor -> lista de letras
+            if valor in asociaciones:
+                asociaciones[valor].append(letra)
+            else:
+                asociaciones[valor] = [letra]
+
+    # Ordenamos por los valores de la columna 2
+    resultado = sorted(asociaciones.items())
+
+    return resultado
+
+# Ejecutar para probar
+if __name__ == "__main__":
+    resultado = pregunta_07()
+    print("Resultado:", resultado)
+

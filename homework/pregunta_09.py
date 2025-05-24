@@ -21,6 +21,35 @@ def pregunta_09():
      'ggg': 13,
      'hhh': 16,
      'iii': 18,
-     'jjj': 18}}
-
+     'jjj': 18}
     """
+    # Ruta al archivo
+    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
+
+    # Diccionario para contar apariciones por clave
+    conteo_claves = {}
+
+    # Abrimos el archivo
+    with open(ruta_archivo, "r", encoding="utf-8") as file:
+        for linea in file:
+            partes = linea.strip().split("\t")
+            columna_5 = partes[4]  # Columna 5 contiene los pares clave:valor
+
+            pares = columna_5.split(",")
+
+            for par in pares:
+                clave, _ = par.split(":")  # Solo tomamos la clave
+
+                # Incrementamos el contador por clave
+                if clave in conteo_claves:
+                    conteo_claves[clave] += 1
+                else:
+                    conteo_claves[clave] = 1
+
+    return conteo_claves
+
+# Ejecutar para probar
+if __name__ == "__main__":
+    resultado = pregunta_09()
+    print("Resultado:", resultado)
+

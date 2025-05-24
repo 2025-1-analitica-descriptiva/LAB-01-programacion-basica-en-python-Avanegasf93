@@ -14,3 +14,35 @@ def pregunta_01():
     214
 
     """
+def pregunta_01():
+    """
+    Retorne la suma de la segunda columna del archivo 'data.csv'.
+    Rta/ 214
+    """
+    # Ruta absoluta al archivo de entrada
+    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
+
+    # Variable para acumular la suma
+    suma_columna_2 = 0
+
+    # Abrimos el archivo en modo lectura con codificación UTF-8
+    with open(ruta_archivo, "r", encoding="utf-8") as file:
+        # Iteramos por cada línea del archivo
+        for line in file:
+            # Eliminamos saltos de línea y separamos por tabulador
+            partes = line.strip().split("\t")
+
+            # Verificamos que haya al menos dos columnas
+            if len(partes) > 1:
+                # Sumamos el valor entero de la segunda columna
+                suma_columna_2 += int(partes[1])
+
+    # Retornamos el resultado final
+    return suma_columna_2
+
+# Código para ejecutar la función si este script se corre directamente
+if __name__ == "__main__":
+    resultado = pregunta_01()
+    print("Resultado:", resultado)
+
+

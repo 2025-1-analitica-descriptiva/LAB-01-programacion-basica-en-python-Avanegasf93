@@ -14,7 +14,7 @@ def pregunta_02():
     Rta/ [('A', 8), ('B', 7), ('C', 5), ('D', 6), ('E', 14)]
     """
     # Ruta absoluta al archivo de entrada
-    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
+    ruta_archivo = "files/input/data.csv"
 
     # Diccionario para llevar el conteo de letras
     conteo = {}

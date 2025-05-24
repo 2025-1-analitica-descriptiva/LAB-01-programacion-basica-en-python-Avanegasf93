@@ -24,7 +24,7 @@ def pregunta_09():
      'jjj': 18}
     """
     # Ruta al archivo
-    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
+    ruta_archivo = "files/input/data.csv"
 
     # Diccionario para contar apariciones por clave
     conteo_claves = {}

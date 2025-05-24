@@ -27,7 +27,7 @@ def pregunta_08():
      (9, ['A', 'B', 'C', 'E'])]
     """
     # Ruta del archivo CSV
-    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
+    ruta_archivo = "files/input/data.csv"
 
     # Diccionario para agrupar letras únicas por valor
     asociaciones = {}

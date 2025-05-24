@@ -24,7 +24,7 @@ def pregunta_07():
      (9, ['A', 'B', 'E', 'A', 'A', 'C'])]
     """
     # Ruta al archivo CSV
-    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
+    ruta_archivo = "files/input/data.csv"
 
     # Diccionario para mapear valores de columna 2 a letras de columna 1
     asociaciones = {}

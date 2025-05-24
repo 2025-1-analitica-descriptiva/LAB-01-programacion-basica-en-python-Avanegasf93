@@ -15,7 +15,7 @@ def pregunta_11():
     {'a': 122, 'b': 49, 'c': 91, 'd': 73, 'e': 86, 'f': 134, 'g': 35}
     """
     # Ruta del archivo de entrada
-    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
+    ruta_archivo = "files/input/data.csv"
 
     # Diccionario para acumular la suma de valores
     suma_por_letra = {}

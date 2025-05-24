@@ -26,7 +26,7 @@ def pregunta_06():
      ('jjj', 5, 17)]
     """
     # Ruta del archivo CSV
-    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
+    ruta_archivo = "files/input/data.csv"
 
     # Diccionario para guardar los valores por clave
     valores_por_clave = {}

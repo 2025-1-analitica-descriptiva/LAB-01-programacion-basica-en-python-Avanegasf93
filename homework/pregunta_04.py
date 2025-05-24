@@ -26,8 +26,8 @@ def pregunta_04():
      ('12', 3)]
     """
     # Ruta al archivo CSV
-    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
-
+    ruta_archivo = "files/input/data.csv"
+    
     # Diccionario para contar registros por mes
     conteo_meses = {}
 

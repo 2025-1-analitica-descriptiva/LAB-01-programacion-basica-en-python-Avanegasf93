@@ -19,7 +19,7 @@ def pregunta_10():
      ('E', 3, 3)]
     """
     # Ruta del archivo
-    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
+    ruta_archivo = "files/input/data.csv"
 
     resultado = []
 

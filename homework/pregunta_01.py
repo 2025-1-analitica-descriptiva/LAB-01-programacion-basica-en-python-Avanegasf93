@@ -20,7 +20,7 @@ def pregunta_01():
     Rta/ 214
     """
     # Ruta absoluta al archivo de entrada
-    ruta_archivo = r"D:\Github\Descriptiva\LAB-01-programacion-basica-en-python-Avanegasf93\files\input\data.csv"
+    ruta_archivo = "files/input/data.csv"
 
     # Variable para acumular la suma
     suma_columna_2 = 0
